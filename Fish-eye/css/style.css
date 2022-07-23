@@ -369,7 +369,12 @@ width: 410px;
     font-size: 14px;
     text-align: left;
     margin-top: 3px;
+    font-size: 14px;
+    font-weight: 400;
     display: none;
+    margin: 3px 0px 0px;
+    height: 18px;
+    line-height: normal;
   }
   .display{
     display: block!important;
@@ -541,4 +546,24 @@ width: 410px;
 
 .hidden{
     display: none;
+}
+
+#submitForm{
+  background-color: #901c1c; 
+  color:white;
+  font-family: "Dm Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  height: 69px;
+  line-height: normal;
+  margin: 0px;
+  padding: 5px 10px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+}
+
+#submitForm:hover{
+  background-color: #db8876; 
+  color: #000000; 
 }

@@ -1,5 +1,5 @@
 function hydratePresentationFactory(data) {
-    const{name, portrait} = data;
+    const{name, portrait } = data;
     const avatar = `../assets/Sample_Photos/PhotographersID/${portrait}`;
     getHydratingPage();
    
@@ -11,7 +11,7 @@ function hydratePresentationFactory(data) {
         const h1 = page.querySelector(".photographer__name" );
         h1.textContent = name;
         const location = page.querySelector(".photographer__location");
-        location.textContent = data.city;
+        location.textContent = data.city + " , " + data.country;
         const quote = page.querySelector(".photographer__quote");
         quote.textContent = data.tagline;
         document.querySelector("#main").prepend(page);
