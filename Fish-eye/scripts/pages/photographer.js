@@ -63,14 +63,22 @@ function RenderPhototgrapher(data){
     const dateFilter = document.querySelector('#Date')
     const titleFilter = document.querySelector('#Titre')
 
-    // Ouverture du select
-    SelectSort.addEventListener("click", () => {
+
+
+    function openSelectFilter() {
         filterList.classList.toggle("open");
-        });
+        filterBtn.setAttribute('aria-expended','true');
+    }
+    
+  
+
+    // Ouverture du select
+    SelectSort.addEventListener("click",openSelectFilter);
 
     /* Fermeture du bouton de trie*/
     filterList.addEventListener("click", () => {
         filterList.classList.remove("open");
+        filterBtn.setAttribute('aria-expended','false');
     });  
 
 
@@ -80,9 +88,7 @@ function RenderPhototgrapher(data){
         filterBtn.innerHTML = 'Popularité';
   
         getSelectedSort(photosId,name,Actualfilter);
-        filterList.addEventListener("click", () => {
-            filterList.classList.toggle("open");
-            });
+        filterList.addEventListener("click", openSelectFilter);
         photosId.forEach((photo) => {
             hydratePhotoFactory(photo, name)
         })
@@ -96,9 +102,7 @@ function RenderPhototgrapher(data){
         filterBtn.innerHTML = 'Date';
      
         getSelectedSort(photosId,name,Actualfilter);
-        filterList.addEventListener("click", () => {
-            filterList.classList.toggle("open");
-            });
+        filterList.addEventListener("click", openSelectFilter);
         photosId.forEach((photo) => {
             hydratePhotoFactory(photo, name)
         })
@@ -112,9 +116,7 @@ function RenderPhototgrapher(data){
         filterBtn.innerHTML = 'Titre';
   
         getSelectedSort(photosId,name,Actualfilter);
-        filterList.addEventListener("click", () => {
-            filterList.classList.toggle("open");
-            });
+        filterList.addEventListener("click",openSelectFilter);
         photosId.forEach((photo) => {
             hydratePhotoFactory(photo, name)
         })
