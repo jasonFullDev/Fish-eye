@@ -466,7 +466,6 @@ width: 410px;
     }
 
     #img__card{
-      width: 80%!important;
       min-width: 355px;
     }
 
@@ -540,6 +539,10 @@ width: 410px;
     }
 
 
+    #filter{
+      margin-left: 5%;
+    }
+
 .menuForm {
   position: fixed;
   inset: 0;
@@ -550,6 +553,9 @@ width: 410px;
 }
 .menuForm.open {
   display: flex;
+  width: 85%;
+  margin: 0 auto;
+  border: 1px solid black;
 }
 .menuForm__container {
   position: relative;
@@ -570,6 +576,7 @@ width: 410px;
   left: 30px;
   border: none;
   background: transparent;
+  font-size: 75px;
 }
 .menuForm .arrow-right {
     cursor: pointer;
@@ -577,6 +584,7 @@ width: 410px;
     right: 30px;
     border: none;
     background: transparent;
+    font-size: 75px;
 }
 .menuForm {
   grid-area: 1/2/2/3;
@@ -595,12 +603,13 @@ width: 410px;
 .menuForm .close {
   cursor: pointer;
   background: transparent;
-  border:none;
+  border: none;
   position: absolute;
-  top: 30px;
+  top: 60px;
   right: 30px;
   min-width: 40px;
   min-height: 40px;
+  font-size: 75px;
   transform: translate3d(0, -12px, 0);
 }
 .menuForm__container button {
@@ -608,6 +617,8 @@ width: 410px;
   border: 0px;
   cursor: pointer;
 }
+
+
 
 
 

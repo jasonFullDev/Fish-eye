@@ -130,6 +130,8 @@ function RenderPhototgrapher(data){
         hydratePhotoFactory(photo, name)
     })
 
+    InitModalZoom();
+
 }
 
 
