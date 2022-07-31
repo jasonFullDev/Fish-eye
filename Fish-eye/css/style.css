@@ -147,6 +147,7 @@ width: 410px;
 .photo-field > .photo__card > .photo__title {
     text-align: left;
     width: 100%;
+    position: relative;
 }
 
 .photo-field > .photo__card > .photo__likes {
@@ -298,9 +299,108 @@ width: 410px;
   .form-contact .close::after {
     transform: rotate(-45deg);
   }
- 
 
-  @media screen and (min-width: 370px) {
+
+   
+  
+
+  /* mobile */
+  @media screen and (min-width: 370px)  and (max-width: 799px) {
+    
+
+  #card-infos {
+    position: fixed;
+    display: flex;
+    gap: 20px;
+    bottom: 0;
+    left: 0;
+    background-color: #DB8876;
+    border-radius: 5px 5px 0 0;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 40px;
+    padding: 0px 20px 10px 10px;
+    z-index: 2;
+    font-weight: 600;
+  }
+  #presentation_counter_likes{
+    position: relative;
+    top: 15px;
+  }
+
+  #card-infos > svg {
+    position: relative;
+    top: 18px;
+  }
+
+    .contact_button {
+      background-color: #db8876; 
+      color: #000000; 
+      font-family: "Dm Sans", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      height: 35px;
+      line-height: normal;
+      margin: -160px 0px 50px;
+      padding: 5px 10px;
+      width: 170px;
+      }
+    .photographer__quote {
+      color: #4f4f4f; 
+      font-family: "DM Sans", sans-serif;
+      font-size: 12.8px;
+      font-weight: 400;
+      height: 34px;
+      line-height: normal;
+      margin: 0px;
+      padding: 0px;
+      width: 215px;
+      }
+    .photographer__location {
+      color: #901c1c; 
+      font-family: "DM Sans", sans-serif;
+      font-size: 12.8px;
+      font-weight: 400;
+      height: 17px;
+      line-height: normal;
+      margin: 0px;
+      padding: 0px;
+      width: 215px;
+      }
+    .photographer__name {
+      color: #d3573c; 
+      font-family: "DM Sans", sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      height: 94px;
+      line-height: normal;
+      margin: 0px;
+      padding: 0px;
+      width: 215px;
+      }
+
+    .photographer__profile{
+
+      background-color: #dedede; 
+      color: #000000; 
+      font-family: "DM Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      height: 100px;
+      line-height: normal;
+      margin: 0px;
+      padding: 0px;
+      width: 100px;
+    }
+    .photo__card{
+      width: 80%;
+    }
+    #img__card , #video__card{
+      width: 80%;
+      margin: 0 auto;
+      min-width: 355px;
+    }
+
     .filter {
       display: flex;
       align-items: baseline;
@@ -508,6 +608,32 @@ width: 410px;
 
   @media screen and (min-width: 800px) and (max-width:1199px){
 
+     
+
+  #card-infos {
+    position: fixed;
+    display: flex;
+    gap: 20px;
+    bottom: 0;
+    left: 0;
+    background-color: #DB8876;
+    border-radius: 5px 5px 0 0;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 40px;
+    padding: 0px 20px 10px 10px;
+    z-index: 2;
+    font-weight: 600;
+  }
+  #presentation_counter_likes{
+    position: relative;
+    top: 15px;
+  }
+
+  #card-infos > svg {
+    position: relative;
+    top: 18px;
+  }
     .photographer_section {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -523,7 +649,33 @@ width: 410px;
   }
 
   @media screen and  (min-width: 1200px) {
+    #card-infos {
+      position: fixed;
+      display: flex;
+      gap: 20px;
+      background-color: #DB8876;
+      border-radius: 5px 5px 0 0;
+      font-size: 1rem;
+      font-weight: 500;
+      height: 40px;
+      padding: 0px 20px 10px 10px;
+      z-index: 2;
+      font-weight: 600;
+      bottom: 0;
+      right: 0;
 
+    
+    }
+
+    #presentation_counter_likes{
+      position: relative;
+      top: 15px;
+    }
+
+    #card-infos > svg {
+      position: relative;
+      top: 18px;
+    }
     .photographer_section {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;

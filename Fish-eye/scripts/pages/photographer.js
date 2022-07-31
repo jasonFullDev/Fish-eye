@@ -28,11 +28,18 @@ async function getPresentation(photographerId) {
     fetch("../data/photographers.json")
         .then(res => res.json())
         .then(data => {
+            
             return data.photographers.filter((photographe)=> photographe.id === parseInt(photographerId, 10))
+
+        
         })
         .then(filtingphotographe => {
-          
+ 
             hydratePresentationFactory(filtingphotographe[0])
+
+            // Photographe Price
+            document.getElementById("photographerRate").innerHTML = filtingphotographe[0].price;
+
             return (filtingphotographe[0].name)
         })
 }
@@ -71,6 +78,9 @@ function RenderPhototgrapher(data){
     }
     
   
+
+   
+
 
     // Ouverture du select
     SelectSort.addEventListener("click",openSelectFilter);
@@ -140,10 +150,36 @@ function InitModalZoom(){
     /* ======================= Photo likes ================================== */
     const photoLike = document.querySelectorAll(".photo__likes");
 
+    
+
     for (let i = 0; i < photoLike.length; i++)
     {
+
+        document.querySelector('#presentation_counter_likes').innerHTML = parseInt(document.querySelector('#presentation_counter_likes').innerHTML) + parseInt(photoLike[i].innerHTML)
+       
+
         photoLike[i].addEventListener("click", () => {
-                photoLike[i].innerHTML = parseInt(photoLike[i].innerHTML) + 1;
+                let HeartSVG = photoLike[i].parentElement.querySelector('.fa-heart')
+              
+
+                console.log(HeartSVG.getAttribute('value'))
+                if(HeartSVG.getAttribute('value') == "false")
+                {
+                    photoLike[i].innerHTML = parseInt(photoLike[i].innerHTML) + 1;
+                    document.querySelector('#presentation_counter_likes').innerHTML = parseInt(document.querySelector('#presentation_counter_likes').innerHTML) + 1;
+                    HeartSVG.classList.remove('far')
+                    HeartSVG.classList.add('fas')
+                    HeartSVG.setAttribute('value','true')
+                }
+                else
+                {
+                    photoLike[i].innerHTML = parseInt(photoLike[i].innerHTML) - 1 ;
+                    document.querySelector('#presentation_counter_likes').innerHTML = parseInt(document.querySelector('#presentation_counter_likes').innerHTML) -1;
+                    HeartSVG.classList.remove('fas')
+                    HeartSVG.classList.add('far')
+                    HeartSVG.setAttribute('value','false')
+                }
+              
             });
     }
 
