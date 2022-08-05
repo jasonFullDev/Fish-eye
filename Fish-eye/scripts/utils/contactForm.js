@@ -16,6 +16,7 @@ function ModalInit(){
     lastname.value = "";
     email.value="";
     message.value="";
+    document.querySelector('#name').innerHTML = document.querySelector('.photographer__name').innerHTML;
     let els = document.querySelectorAll('.errorMsg');
     els.forEach(el => {
         el.classList.remove('display');
