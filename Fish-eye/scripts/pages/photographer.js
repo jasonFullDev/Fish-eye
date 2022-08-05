@@ -74,7 +74,7 @@ function RenderPhototgrapher(data){
 
     function openSelectFilter() {
         filterList.classList.toggle("open");
-        filterBtn.setAttribute('aria-expended','true');
+    
     }
     
   
@@ -88,7 +88,7 @@ function RenderPhototgrapher(data){
     /* Fermeture du bouton de trie*/
     filterList.addEventListener("click", () => {
         filterList.classList.remove("open");
-        filterBtn.setAttribute('aria-expended','false');
+  
     });  
 
 

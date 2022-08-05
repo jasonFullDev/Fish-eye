@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8">
@@ -11,7 +12,7 @@
   </head>
   <body>
     <header>
-      <a href="./index.html">    <img src="assets/images/logo.png" class="logo" /></a>
+      <a href="./index.html">    <img src="assets/images/logo.png" class="logo" alt="logo" /></a>
     </header>
     <main id="main">
       <template id="photographer__template">
@@ -29,7 +30,7 @@
 
       <div id="card-infos">
         <span id="presentation_counter_likes">0</span>
-        <i class="fas fa-heart" aria-label="likes"></i>
+        <i class="fas fa-heart" ></i>
         <p><span id="photographerRate"></span> € / jour</p>
       </div>
      
@@ -40,7 +41,7 @@
               <span id="filter-label" class="filter__label">Trier par</span>
 
               <div id="filter-wrapper" class="filter__wrapper">
-                  <button id="filter-btn" class="btn filter-btn active" aria-expended="false" aria-haspopup="listbox"
+                  <button id="filter-btn" class="btn filter-btn active" aria-haspopup="listbox"
                       aria-labelledby="filter-label">Popularité</button>
 
                   <!-- filter listbox -->
@@ -69,19 +70,19 @@
       </section>
     </main>
 
-    <div id="modal-menuForm" class="menuForm" tabindex="0" aria-label="Vue rapproché">
+    <div id="modal-menuForm" class="menuForm" tabindex="0">
         <div class="menuForm__container"></div>
 
         <!-- left arrow -->
         <button class="arrow-left" aria-label="précédent">
-            <i role="button" class="fas fa-chevron-left"></i>
+            <i  class="fas fa-chevron-left"></i>
         </button>
 
         <div id="modal-zoom-media"></div>
 
         <!-- right arrow -->
         <button class="arrow-right" aria-label="suivant">
-            <i role="button" class="fas fa-chevron-right"></i>
+            <i  class="fas fa-chevron-right"></i>
         </button>
         
         <button class="close" aria-label="fermer la vue rapproché">
@@ -89,13 +90,13 @@
         </button>
       </div>
 
-    <div id="contact_modal" class="form-contact" tabindex="0" aria-label="Modal de contact" >
+    <div id="contact_modal" class="form-contact" tabindex="0">
         <div class="form-contact__container" >
 
             <!-- form name -->
             <h1 id="form-name" class="form-name">Contactez-moi<br></h1>
 
-            <h2 class="form-name" id="name"></h2>
+            <h2 class="form-name" id="name">name</h2>
 
             <form id="contact-form" class="form" tabindex="0" aria-label="formulaire de contact">
                 <!-- first name -->
