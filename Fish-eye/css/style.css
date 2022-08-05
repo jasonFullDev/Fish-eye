@@ -763,6 +763,19 @@ width: 410px;
 
   @media screen and  (min-width: 1200px) {
 
+    .contact_button {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      padding: 11px;
+      width: 170px;
+      height: 70px;
+      border: none;
+      background-color: #901C1C;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
     .photo_like_container {
       position: relative;
       display: flex;

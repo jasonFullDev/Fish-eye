@@ -71,17 +71,12 @@ function RenderPhototgrapher(data){
     const titleFilter = document.querySelector('#Titre')
 
 
-
     function openSelectFilter() {
         filterList.classList.toggle("open");
     
     }
     
   
-
-   
-
-
     // Ouverture du select
     SelectSort.addEventListener("click",openSelectFilter);
 

@@ -56,7 +56,9 @@ function ModalConfirm(event){
     if(statut)
     {
        closeModal();
+       return
     }
+
 
     event.preventDefault();
   
