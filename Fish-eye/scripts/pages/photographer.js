@@ -4,7 +4,6 @@ import getSelectedSort from "../functions/getSelectedSort.js";
 
 var photoCard;
 var ActualID;
-var photoLenght;
 var modalZoom = document.querySelector('#modal-zoom-media')
 
 
@@ -63,7 +62,6 @@ function RenderPhototgrapher(data){
     const photosId = data[0]
     const name = data[1]
     const SelectSort = document.querySelector('#filter')
-    const filterChoice = document.querySelectorAll('.filter-list__item')
     const filterList = document.getElementById('filter-list')
     const filterBtn = document.querySelector('#filter-btn')
     const LikesFilter = document.querySelector('#Popularite')

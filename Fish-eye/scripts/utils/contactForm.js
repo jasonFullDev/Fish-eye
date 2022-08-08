@@ -64,6 +64,7 @@ function ModalConfirm(event){
   
 }
 
+// eslint-disable-next-line no-unused-vars
 function displayModal() {
 	modal.style.display = "block";
     ModalInit()

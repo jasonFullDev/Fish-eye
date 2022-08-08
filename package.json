@@ -1,0 +1,22 @@
+{
+  "name": "fish-eye",
+  "version": "1.0.0",
+  "description": "repo recreate from another deleted repo  => car ancien repo supprimé  (ex-company)",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonFullDev/Fish-eye.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonFullDev/Fish-eye/issues"
+  },
+  "homepage": "https://github.com/jasonFullDev/Fish-eye#readme",
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  }
+}
