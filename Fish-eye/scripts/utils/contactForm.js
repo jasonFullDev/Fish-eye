@@ -29,6 +29,7 @@ function ModalInit(){
 function ModalConfirm(event){
 
     let statut = true
+
     if(firstname.value.length < 2)
     {
         statut = false;
@@ -58,6 +59,9 @@ function ModalConfirm(event){
        closeModal();
        return
     }
+
+
+    /* clear formulaire et close modal */ 
 
 
     event.preventDefault();

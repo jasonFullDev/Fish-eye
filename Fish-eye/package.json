@@ -1,0 +1,15 @@
+{
+  "name": "fish-eye",
+  "version": "1.0.0",
+  "description": "Rien à installer ici, il suffit d'ouvrir le fichier `index.html`.",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "linter" : "npx eslint ./scripts/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.23.0"
+  }
+}

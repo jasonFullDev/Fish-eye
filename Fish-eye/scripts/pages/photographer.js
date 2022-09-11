@@ -193,6 +193,7 @@ function InitModalZoom(){
                 document.getElementById("modal-menuForm").focus();
 
 
+             
                 //On essaye de récupèrer le media video sinon on récupère l'image
                 try
                 {
@@ -214,6 +215,7 @@ function InitModalZoom(){
                 }
                 catch
                 {
+                
                     let img = document.createElement('img');
                     img.src = photoCard[i].querySelector(".photo").src
                     modalZoom.append(img);
